@@ -497,21 +497,8 @@ section#epilogue .column h3 {
   line-height: 26px;
 }
 
-#footer .container .row .column.news input[type="search"] {
-  border: 0;
-  padding: 6px 8px;
-  width: 65%;
-  outline: none;
-}
-
-#footer .container .row .column.news input[type="submit"] {
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: var(--primary-color);
+#footer .container .row .sns p a img {
+  margin: 0px 10px 0px 0px;
 }
 
 /* 반응형 css */
