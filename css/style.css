@@ -59,6 +59,10 @@
   background-color: #abeb17;
 }
 
+.progressbar .items-wrap:nth-of-type(5) .item {
+  background-color: #17bceb;
+}
+
 .progressbar .item .title {
   float: left;
   font-weight: 700;
@@ -257,7 +261,7 @@ section#myskill.active
   .inner.progressbar
   .items-wrap:nth-of-type(1)
   .item {
-  width: 50%;
+  width: 70%;
 }
 
 section#myskill.active
@@ -266,7 +270,7 @@ section#myskill.active
   .inner.progressbar
   .items-wrap:nth-of-type(2)
   .item {
-  width: 80%;
+  width: 40%;
   transition-delay: 0.25s;
 }
 
@@ -286,8 +290,18 @@ section#myskill.active
   .inner.progressbar
   .items-wrap:nth-of-type(4)
   .item {
-  width: 60%;
+  width: 50%;
   transition-delay: 0.75s;
+}
+
+section#myskill.active
+  .row
+  .column
+  .inner.progressbar
+  .items-wrap:nth-of-type(5)
+  .item {
+  width: 70%;
+  transition-delay: 0.9s;
 }
 
 section .row .column .inner img.shadow {
@@ -300,6 +314,12 @@ section .row .column .inner.border-none-type {
   border: none;
   box-shadow: none;
   background: none;
+}
+
+section#mytool .inner:nth-child(4) img {
+  display: flex;
+  width: 120px;
+  height: 120px;
 }
 
 section > article {
@@ -387,6 +407,11 @@ section .row .column .inner {
 
 section .row .column .inner img {
   width: 100%;
+}
+
+section#epilogue .column h3 {
+  font-size: 30px;
+  font-weight: normal;
 }
 
 /* footer area */
@@ -527,12 +552,11 @@ section .row .column .inner img {
 
   /* 햄버거 버튼 */
   input[type="checkbox"]#gnbcheck:checked ~ #gnbbtn > span:nth-child(2) {
-    /* display: none; */
     opacity: 0;
   }
 
   input[type="checkbox"]#gnbcheck:checked ~ #gnbbtn > span {
-    top: 50%; /*부모요소의 높이가 32px이므로 16px과 같다 -> top: 16px;*/
+    top: 50%;
   }
 
   input[type="checkbox"]#gnbcheck:checked ~ #gnbbtn > span:nth-child(1) {
@@ -564,7 +588,6 @@ section .row .column .inner img {
 
   #gnb ul li {
     width: 100%;
-    /* float: none; */
     padding-left: 10px;
     box-sizing: border-box;
   }
