@@ -215,7 +215,8 @@ section#portfolio .row .column .inner p {
 }
 
 section#portfolio .inner .image {
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+  /* text-align: left; */
 }
 
 section#portfolio .inner h3 {
